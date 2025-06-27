@@ -16,7 +16,6 @@ const ProductDetails = () => {
     return <div className="p-4 text-center text-xl">Product not found 😕</div>;
   }
 
-  // ✅ Handlers with redirect
   const handleAddToCart = () => {
     dispatch(addToCart(product));
     navigate('/cart');
@@ -49,7 +48,7 @@ const ProductDetails = () => {
             <strong>Rating:</strong> {product.rating} ⭐
           </p>
 
-          {/* ✅ Buttons */}
+          {/*Buttons */}
           <div className="flex gap-4 mt-6">
             <button
               className="bg-slate-400 text-white px-4 py-2 rounded hover:bg-black"
